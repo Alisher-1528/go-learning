@@ -7,7 +7,7 @@ import (
 func main() {
 	var strok string
 	strok = "global"
-	revers := ""
+	revers := " "
 	for i := len(strok) - 1; i >= 0; i-- {
 		revers += string(strok[i])
 	}
