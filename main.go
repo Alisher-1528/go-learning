@@ -11,7 +11,7 @@ func main() {
 	for i := len(strok) - 1; i >= 0; i-- {
 		revers += string(strok[i])
 	}
-	fmt.Println(len(strok))
+	fmt.Println(revers)
 
 	/*
 		lens := 0
