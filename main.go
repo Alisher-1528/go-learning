@@ -1,56 +1,94 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	var strok string
-	strok = "global"
-	revers := ""
-	for i := len(strok) - 1; i >= 0; i-- {
-		revers += string(strok[i])
-	}
-	fmt.Println(revers)
 
-	/*
-		lens := 0
-		fmt.Print("Ведите длину масива ")
-		fmt.Scan(&lens)
-
-		numbers := make([]int, lens)
-		for i := 0; i < lens; i++ {
-			fmt.Printf("Введите число %d: ", i+1)
-			fmt.Scan(&numbers[i])
-		}
-		fmt.Println("Исходный срез  ", numbers)
-
-		max := numbers[0]
-		min := numbers[0]
-		sums := 0
-		cout := 0
-		leg := len(numbers)
-		fmt.Println(leg)
-
-		for _, num := range numbers {
-			if num%2 == 0 {
-				cout++
-			}
-			sums += num
-			if num > max {
-				max = num
-			}
-			if num < min {
-				min = num
-			}
-
-		}
-		fmt.Println("Максимальное число ", max)
-		fmt.Println("Минимальное число ", min)
-		fmt.Println("Количество четных ", cout)
-		fmt.Println("Сумма ", sums)
-	*/
 }
+
+//var name string
+// var age int
+// var rost float64
+// var student string
+// var sity string
+// const BIRTH_YEAR = 1996
+
+// fmt.Println("Ведите имя")
+// fmt.Scan(&name)
+// fmt.Println("Возраст ")
+// fmt.Scan(&age)
+// fmt.Println("Ваш рост ")
+// fmt.Scan(&rost)
+// fmt.Println("Вы студент  ")
+// fmt.Scan(&student)
+
+// fmt.Println("С какого города вы ")
+// fmt.Scan(&sity)
+// calculatedAge := 2026 - BIRTH_YEAR
+
+// // Выводим результаты
+// fmt.Println("\n--- Личная карточка ---")
+// fmt.Println("Имя:", name)
+// fmt.Println("Возраст:", age)
+// if age > 0 && age <=12 {
+// 	fmt.Println("Возрастная группа: Ребенок ")
+// } else if age >=13 && age <= 17{
+// 	fmt.Println("Возрастная группа: Подросток ")
+// } else if age>=18 && age <=25{
+// 	fmt.Println("Возрастная группа: Молодой взрослый ")
+// }else if age>=26 && age <=60{
+// 	fmt.Println("Возрастная группа: Взрослый ")
+// } else {
+// 	fmt.Println("Возрастная группа: Пенсионер ")
+// }
+
+// fmt.Println("Рост:", rost, "м")
+// fmt.Println("Студент:", student)
+// fmt.Println("Город:", sity)
+// fmt.Println("Год рождения (из константы):", BIRTH_YEAR)
+// fmt.Println("Возраст по году рождения:", calculatedAge)
+// if calculatedAge == age {
+// 	fmt.Println("✅ Возраст совпадает с годом рождения")
+// } else {
+// 	fmt.Println("⚠️ Возраст не совпадает с годом рождения")
+// }
+
+/*
+	lens := 0
+	fmt.Print("Ведите длину масива ")
+	fmt.Scan(&lens)
+
+	numbers := make([]int, lens)
+	for i := 0; i < lens; i++ {
+		fmt.Printf("Введите число %d: ", i+1)
+		fmt.Scan(&numbers[i])
+	}
+	fmt.Println("Исходный срез  ", numbers)
+
+	max := numbers[0]
+	min := numbers[0]
+	sums := 0
+	cout := 0
+	leg := len(numbers)
+	fmt.Println(leg)
+
+	for _, num := range numbers {
+		if num%2 == 0 {
+			cout++
+		}
+		sums += num
+		if num > max {
+			max = num
+		}
+		if num < min {
+			min = num
+		}
+
+	}
+	fmt.Println("Максимальное число ", max)
+	fmt.Println("Минимальное число ", min)
+	fmt.Println("Количество четных ", cout)
+	fmt.Println("Сумма ", sums)
+*/
+//}
 
 /*m := []int{1, 2, 3, 4, 5}
 	for _, r := range m {
