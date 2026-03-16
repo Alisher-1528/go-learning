@@ -1,9 +1,60 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	var n []int
+	numbers := []int{2, 2, 2, 2, 3, 3, 5, 4, 5, 5}
+	sum := 0
+	max := numbers[0]
+	min := numbers[0]
+	caunt := 0
+	n = append(n, 2, 2, 4, 5, 6)
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+
+	}
+	for _, value := range numbers {
+
+		sum += value
+		if value > max {
+			max = value
+		}
+		if value < min {
+			min = value
+		}
+		if value%2 == 0 {
+			caunt++
+		}
+
+	}
+	fmt.Printf("Сумма: %d, Макс значение: %d Мин значение: %d Четное: %d Нечетное: %d ", sum, max, min, caunt, len(numbers)-caunt)
 }
 
+// var n, m int
+// var s string
+// fmt.Println("Ведите число: ")
+// fmt.Scan(&n)
+// fmt.Println("Ведите число до скольки умножать: ")
+// fmt.Scan(&m)
+// fmt.Println("Ведите матиматическую операцию хотите провести(*,/,-,+): ")
+// fmt.Scan(&s)
+// for i := 0; i < m; i++ {
+// 	switch s {
+// 	case "*":
+// 		fmt.Printf("%d x %d = %d\n", n, i, n*i)
+// 	case "+":
+// 		fmt.Printf("%d + %d = %d\n", n, i, n+i)
+// 	case "-":
+// 		fmt.Printf("%d - %d = %d\n", n, i, n-i)
+// 	case "/":
+// 		fmt.Printf("%d / %d = %d\n", n, i, n/i)
+// 	default:
+// 		fmt.Println("Неправильная операция ")
+
+// 	}
+
+//}
 //var name string
 // var age int
 // var rost float64
